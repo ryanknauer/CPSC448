@@ -4,7 +4,7 @@ For the first portion of this project, I created a demo Chrome Extension that re
 
 ## Setting Up Chrome Extension
 
-The first week consisted namely of setting up the Chrome Extension to allow for content script injections. This allows the extension to interact with the web page anytime a Youtube Video is loaded. From here I injected a button into the Youtube Player that would indicate whent to start looking for emotions in the video as seen below:
+The first task was setting up the Chrome Extension to allow for content script injections. This allows the extension to interact with the web page anytime a Youtube Video is loaded. From here I injected a button into the Youtube Player that would indicate whent to start looking for emotions in the video as seen below:
 
 ![](https://github.com/ryanknauer/CPSC448/blob/master/Images/Screen%20Shot%202019-05-14%20at%2010.53.27%20AM.png)
 
