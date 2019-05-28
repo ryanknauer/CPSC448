@@ -1,6 +1,6 @@
 # Chrome Extension Using Open Source Frameworks:
 
-For the first portion of this project, I created a demo Chrome Extension that recognizes a face in a Youtube video and overlays an emoji indicating the emotion of the face. This iteration utilizes two open source frameworks for Facial and Emotion recognition, [Face-API.js](https://github.com/justadudewhohacks/face-api.js?files=1) and [FrontEnd-EmotionDetection](https://github.com/kevinisbest/FrontEnd-EmotionDetection) respectively. A video demo can be seen [here](https://github.com/ryanknauer/CPSC448/blob/master/Images/Emotion%20Recognition%20Demo.mov)
+For the first portion of this project, I created a demo Chrome Extension that recognizes a face in a Youtube video and overlays an emoji indicating the emotion of the face. This iteration utilizes two open source frameworks for Facial and Emotion recognition, [Face-API.js](https://github.com/justadudewhohacks/face-api.js?files=1) and [FrontEnd-EmotionDetection](https://github.com/kevinisbest/FrontEnd-EmotionDetection) respectively. A video demo can be seen [here](https://github.com/ryanknauer/CPSC448/blob/master/Images/Emotion%20Recognition%20Demo.mov) or you instructions for downloading the extension are [here](https://github.com/ryanknauer/CPSC448#chrome-extension-demo) https://github.com/ryanknauer/CPSC448#chrome-extension-demo)
 
 ## Setting Up Chrome Extension
 
