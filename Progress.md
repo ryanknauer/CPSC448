@@ -21,7 +21,9 @@ With access to the video frames, the next step is to locate a Face in each frame
 
 ## Emotion Recognition
 
-With the face detection giving a bounding box for the face itelf, I was able to grab the image of the face alone in order to perform an [Emotion Recognition function](https://github.com/ryanknauer/CPSC448/blob/b6fed5b75f8f1bb9c650517e8365b16d1cef5bc2/YoutubeExtension/testing.js#L114) . While there was much less sources for Emotion Recognition, I found another open source project called [FrontEnd-EmotionDetection](https://github.com/kevinisbest/FrontEnd-EmotionDetection) with a pre-trained model for TensorFlow.js.
+With the face detection giving a bounding box for the face itelf, I was able to grab the image of the face alone in order to perform an [Emotion Recognition function](https://github.com/ryanknauer/CPSC448/blob/b6fed5b75f8f1bb9c650517e8365b16d1cef5bc2/YoutubeExtension/testing.js#L114) . While there was much less sources for Emotion Recognition, I found another open source project called [FrontEnd-EmotionDetection](https://github.com/kevinisbest/FrontEnd-EmotionDetection) with a pre-trained model for TensorFlow.js. Once the emotion detection was working, I then added an overlay of an emoji in the top left corner indicating the emotion of the recognized face as seen below:
+
+![](https://github.com/ryanknauer/CPSC448/blob/master/Images/Screen%20Shot%202019-05-27%20at%205.26.56%20PM.png)
 
 
 
