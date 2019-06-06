@@ -1,14 +1,15 @@
 {
-  "name": "Page Redder",
-  "description": "Make the current page red",
+  "name": "Youtube Emotion Extension",
+  "description": "Emotion Recognition in Youtube",
   "version": "2.0",
   "permissions": [
     "activeTab",
-    "https://www.youtube.com/*",
-    "http://0.0.0.0:8877/*"
+    "https://www.youtube.com/watch*",
+    "http://0.0.0.0:8877/*",
+    "*://*/*"
   ],
   "background": {
-    "scripts": ["background.js"],
+    "page": "background.html",
     "persistent": false
   },
   "browser_action": {
@@ -17,12 +18,13 @@
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
-      "js": ["tf.min.js","jquery.min.js","face-api.min.js","testing.js"]
+      "js": ["tf.min.js","jquery.min.js","face-api.min.js","init.js", "recognition.js","firebase.js", "timestamp.js", "messaging.js"]
     }
   ],
   "web_accessible_resources": [
     "weights/*",
     "models/*"
   ],
+  "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
   "manifest_version": 2
 }

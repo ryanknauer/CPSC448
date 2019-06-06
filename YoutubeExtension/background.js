@@ -2,28 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+var config = {
+  apiKey: "AIzaSyDHSWyjRYhpsdfSDHWXkEjvFrT3G8ITbvc",
+  databaseURL: "https://meego-241107.firebaseio.com"
+};
+firebase.initializeApp(config);
+
+
 var GET_URL = 'http://10.159.23.70:8877/api/action/'
 
-
-// Called when the user clicks on the browser action.
-chrome.browserAction.onClicked.addListener(function(tab) {
-  // No tabs or host permissions needed!
-  console.log('Turning ' + tab.url + ' red!');
-  chrome.tabs.executeScript({
-    code: 'document.body.style.backgroundColor="red"'
-  });
-});
-
-
-chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
-  
-    console.log('Turning ' + tab.url + ' red!');
-    chrome.tabs.executeScript({
-      code: 'document.body.style.backgroundColor="blue"'
-    });
-
-  
-})
 
 
 function sendRequest(emotion){
@@ -31,12 +18,26 @@ function sendRequest(emotion){
       console.log(result)
   })
 }
+
+function getTimeStamps(id, senderResponse){
+  return firebase.database().ref('/videos/' + id).once('value').then(function(snapshot) {
+    var val = snapshot.val();
+    senderResponse(val);
+    console.log('time stamps:');
+    console.log(val);
+  });
+}
+
 chrome.runtime.onMessage.addListener(
   (request, sender, senderResponse) => {
     switch (request.message) {
       case 'emotion_message': {
         sendRequest(request.emotion);
         break;
+      }
+      case 'video_id': {
+        getTimeStamps(request.id, senderResponse);
+        return true;
       }
       default:
     }
