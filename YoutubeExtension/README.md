@@ -9,6 +9,9 @@ For the first portion of this project, I created a demo Chrome Extension that re
 3. Turn on developer mode in the top right corner.
 4. Click "load unpacked" 
 5. Open the "YoutubeExtension" file from this repo
+6. Go to any Youtube Video and click the robot face button in the bottom right of the video player.
+Note: You may need to refresh the page once for the button to appear
+
 
 ## Progress
 
