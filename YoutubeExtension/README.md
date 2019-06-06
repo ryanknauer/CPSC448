@@ -41,6 +41,3 @@ With the face detection giving a bounding box for the face itelf, I was able to 
 ### 5. Tuning
 
 Tuning will be an ongoing process for this project and one that I will look to explore in my readings. One very big issue with the inital implementation was the model jumping between emotions on non-discernible faces, which is very common in a normal youtube video. As an initial step to help lower the overwhelming nuber of false negatives I implemented a fairly simple [thresholding method](https://github.com/ryanknauer/CPSC448/blob/187de22b86858f3056184dc57f7417b6b5936ab2/YoutubeExtension/testing.js#L130). Because the model returns percentages for each possible emotion, I created a minimum threshold for any non-nuetral emotion. This causes only strong deviations from nuetral to be picked up, which helped with the staggering predictions on nuetral faces.   
-
-
-
