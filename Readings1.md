@@ -6,3 +6,6 @@ I started out by reading ["A Brief Review of Facial Emotion Recognition Based on
 2. Landmark Detection - locating potential features (e.g. SIFT) not yet specific to facial features; used for #1 as well
 3. Feature Extraction - locating features such as noses, eyes by clustering Landmarks from step #2
 4. Facial Expression Classification - Making a Facial Expression Classification based on features from #3
+
+
+The second and newer method utilizes Deep Learning and Nueral Networks with very effective results. This method allows for less dependence on "face-physics based models", which I believe indicates ...
