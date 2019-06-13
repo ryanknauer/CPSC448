@@ -25,3 +25,5 @@ I am currently taking CPSC 491 working on a project with CDM to build an interac
 
 
 !!! Explain why this is seperate form CDM Project
+
+!!! Markov Chains for smoothing emotions
