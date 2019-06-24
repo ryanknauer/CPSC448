@@ -19,3 +19,7 @@ In order to easily compare and test different weighting values, I also implement
 
 ## Results
 
+#### Original w/o markov chain
+![](https://github.com/ryanknauer/CPSC448/blob/master/Images/without_markov.gif)
+#### Using markov chain w/ markovWeight 9 (normalized to 0.6 for same state and 0.066 for all other transitions)
+![](https://github.com/ryanknauer/CPSC448/blob/master/Images/with_markov.gif)
