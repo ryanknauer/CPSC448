@@ -37,5 +37,3 @@ jQuery(window).load(function(){
 });
 
 
-
-

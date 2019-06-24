@@ -87,11 +87,17 @@ async function getEmotions(results, canvas, input) {
         face_im = preprocess(face_im);
         
         z = EmotionModel.predict(face_im)
+        
+        if (useMarkov){
+            z.print()
+            z = applyMarkovWeights(z)
+            z.print()
+        }
         let top = z.argMax(1).dataSync()[0]
         let indexes = tf.topk(z, 2)['indices']
         indexes = indexes.dataSync()
         let index = indexes[0] == 6 ? indexes[1]  : indexes[0]
-        const threshold = 0.1
+        const threshold = 0
         zsync = z.dataSync()
         if (z.dataSync()[index] > threshold){
             //sendEmotionRequest(index)

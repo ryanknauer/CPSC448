@@ -18,7 +18,7 @@
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
-      "js": ["tf.min.js","jquery.min.js","face-api.min.js","init.js", "recognition.js","firebase.js", "timestamp.js", "messaging.js"]
+      "js": ["tf.min.js","jquery.min.js","face-api.min.js","init.js", "recognition.js","firebase.js", "timestamp.js", "messaging.js","markov.js"]
     }
   ],
   "web_accessible_resources": [
