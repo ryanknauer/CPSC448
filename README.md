@@ -20,3 +20,10 @@ I am currently taking CPSC 491 working on a project with CDM to build an interac
   * Ideas on best way to set these hyperparameters
   * Ideal data I would want to gather for training
   * Steps I would take for training + validating
+
+
+
+
+!!! Explain why this is seperate form CDM Project
+
+!!! Markov Chains for smoothing emotions

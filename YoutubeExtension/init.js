@@ -40,5 +40,3 @@ jQuery(window).load(function(){
 });
 
 
-
-

@@ -9,6 +9,9 @@ For the first portion of this project, I created a demo Chrome Extension that re
 3. Turn on developer mode in the top right corner.
 4. Click "load unpacked" 
 5. Open the "YoutubeExtension" file from this repo
+6. Go to any Youtube Video and click the 'Watch with Meego' button in the bottom right of the video player.
+Note: You may need to refresh the page once for the button to appear
+
 
 ## Progress
 
@@ -31,13 +34,10 @@ With access to the video frames, the next step is to locate a Face in each frame
 
 ### 4. Emotion Recognition
 
-With the face detection giving a bounding box for the face itelf, I was able to grab the image of the face alone in order to perform an [Emotion Recognition function](https://github.com/ryanknauer/CPSC448/blob/b6fed5b75f8f1bb9c650517e8365b16d1cef5bc2/YoutubeExtension/testing.js#L114) . While there was much less sources for Emotion Recognition, I found another open source project called [FrontEnd-EmotionDetection](https://github.com/kevinisbest/FrontEnd-EmotionDetection) with a pre-trained model for TensorFlow.js. Once the emotion detection was working, I then added an overlay of an emoji in the top left corner indicating the emotion of the recognized face as seen below:
+With the face detection giving a bounding box for the face itelf, I was able to grab the image of the face alone in order to perform an [Emotion Recognition function](https://github.com/ryanknauer/CPSC448/blob/6d8590f970eb55345c6eb4c7e3eb5426009df0e5/YoutubeExtension/recognition.js#L66) . While there was much less sources for Emotion Recognition, I found another open source project called [FrontEnd-EmotionDetection](https://github.com/kevinisbest/FrontEnd-EmotionDetection) with a pre-trained model for TensorFlow.js. Once the emotion detection was working, I then added an overlay of an emoji in the top left corner indicating the emotion of the recognized face as seen below:
 
 ![](https://github.com/ryanknauer/CPSC448/blob/master/Images/Screen%20Shot%202019-05-27%20at%205.26.56%20PM.png)
 
 ### 5. Tuning
 
-Tuning will be an ongoing process for this project and one that I will look to explore in my readings. One very big issue with the inital implementation was the model jumping between emotions on non-discernible faces, which is very common in a normal youtube video. As an initial step to help lower the overwhelming nuber of false negatives I implemented a fairly simple [thresholding method](https://github.com/ryanknauer/CPSC448/blob/187de22b86858f3056184dc57f7417b6b5936ab2/YoutubeExtension/testing.js#L130). Because the model returns percentages for each possible emotion, I created a minimum threshold for any non-nuetral emotion. This causes only strong deviations from nuetral to be picked up, which helped with the staggering predictions on nuetral faces.   
-
-
-
+Tuning will be an ongoing process for this project and one that I will look to explore in my readings. One very big issue with the inital implementation was the model jumping between emotions on non-discernible faces, which is very common in a normal youtube video. As an initial step to help lower the overwhelming nuber of false negatives I implemented a fairly simple [thresholding method](https://github.com/ryanknauer/CPSC448/blob/6d8590f970eb55345c6eb4c7e3eb5426009df0e5/YoutubeExtension/recognition.js#L93). Because the model returns percentages for each possible emotion, I created a minimum threshold for any non-nuetral emotion. This causes only strong deviations from nuetral to be picked up, which helped with the staggering predictions on nuetral faces.   
