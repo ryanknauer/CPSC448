@@ -4,7 +4,9 @@
 
 // Called when the user clicks on the browser action.
 
-const UseTimeStamps = false
+const UseTimeStamps = true
+const VideoPlayer = document.getElementsByClassName('html5-main-video')[0]
+let GameController = null
 
 var checkControls = function(){
     var $ = window.jQuery
@@ -24,6 +26,7 @@ jQuery(document).ready(function($){
         setupFirebase()
         //prob just wanna make this video global 
         setupTimestamps(document.getElementsByClassName('html5-main-video')[0])
+        GameController = new Game()
     }else{
         setupCanvas()
         $('#meego-ytp-button').click(function() {
