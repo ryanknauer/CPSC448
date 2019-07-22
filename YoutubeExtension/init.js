@@ -4,7 +4,7 @@
 
 // Called when the user clicks on the browser action.
 
-const UseTimeStamps = true
+const UseTimeStamps = false
 const VideoPlayer = document.getElementsByClassName('html5-main-video')[0]
 let GameController = null
 
