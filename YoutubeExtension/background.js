@@ -9,12 +9,18 @@ var config = {
 firebase.initializeApp(config);
 
 
-var GET_URL = 'http://10.159.23.70:8877/api/action/'
+var GET_URL = 'http://10.159.23.78:8877/api/action/'
 
 
 
 function sendRequest(emotion){
   fetch(GET_URL + String(emotion)).then(r => r.text()).then(result => {
+      console.log(result)
+  })
+}
+
+function sendGameRequest(emotion, isCorrect){
+  fetch(GET_URL + "game/" + String(emotion) + "/" + String(isCorrect | 0)).then(r => r.text()).then(result => {
       console.log(result)
   })
 }
@@ -33,6 +39,10 @@ chrome.runtime.onMessage.addListener(
     switch (request.message) {
       case 'emotion_message': {
         sendRequest(request.emotion);
+        break;
+      }
+      case 'game_message': {
+        sendGameRequest(request.emotion, request.isCorrect);
         break;
       }
       case 'video_id': {

@@ -18,7 +18,7 @@ function setupTimestamps(video){
 } 
 
 function videoUpdate(video){
-    if (tsIndex >= timestamps.length){
+    if (!timestamps || tsIndex >= timestamps.length){
         return
     }
     while (timestamps[tsIndex].time + timeWindow < video.currentTime){
@@ -27,7 +27,8 @@ function videoUpdate(video){
     currTS = timestamps[tsIndex]
     if (currTS.time < video.currentTime){
         console.log('sending emotion:' + currTS.emotion)
-        sendEmotionRequest(currTS.emotion)
+        //sendEmotionRequest(currTS.emotion)
+        GameController.newGuess(currTS.emotion)
         tsIndex++
     }
 }

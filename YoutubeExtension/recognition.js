@@ -1,10 +1,11 @@
 
-var emotion_labels = ["😠", "💩", "😨", "😀", "😢", "😮", "neutral"];
+var emotion_labels = ["😠", "💩", "😨", "😀", "😢", "😮", "😐"];
 var emotion_colors = ["#ff0000", "#00a800", "#ff4fc1", "#ffe100", "#306eff", "#ff9d00", "#7c7c7c"];
 var EmotionModel
 var offset_x = 27;
 var offset_y = 20;
 var most_recent_emotion = 6
+var most_recent_emotions = tf.ones([7], tf.int32)
 
 
 
@@ -88,20 +89,23 @@ async function getEmotions(results, canvas, input) {
         
         z = EmotionModel.predict(face_im)
         
-        if (useMarkov){
-            //z.print()
+        if (useMarkov == 1){
+            z = applyMarkovWeights(z)
+        }else if(useMarkov == 2){
             z_arr = hmm_predict_states(z.argMax(1).dataSync()[0])
             z = tf.tensor([z_arr])
-            //z.print()
         }
         let top = z.argMax(1).dataSync()[0]
         let indexes = tf.topk(z, 2)['indices']
         indexes = indexes.dataSync()
+        
+        //let index = indexes[0] == 6 ? indexes[1]  : indexes[0]
         let index = indexes[0]
         const threshold = 0
         zsync = z.dataSync()
         if (z.dataSync()[index] >= threshold){
             //sendEmotionRequest(index)
+            most_recent_emotions = z.clone()
             most_recent_emotion = index
             context.fillText(emotion_labels[index], 10, 84);
         }
