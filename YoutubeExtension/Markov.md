@@ -55,7 +55,41 @@ Our transition Model will represent the probability of transitioning from one st
 #### Observation Model
 
 
-The observation model describes that if we know the current state of an individual frame, what is the probability of the CNN model to predict each state. Again this can be represented as Square Matrix with i,j represneting that in a given state i, state j has an X probability of being observed. 
+The observation model describes that if we know the current state of an individual frame, what is the probability of the CNN model to predict each state. Again this can be represented as Square Matrix with a value X at index i,j that in the given state i, state j has an X probability of being observed. 
+
+#### Single Valued Observation
+
+Most common HMM assume a single valued observation represting the exact state observed. So, even though our CNN observation provides a probablistic observation for each state, we will start by providing only the highest probable state as the single observed state. Of course this looses any differentiation between more or less confident guesses by the CNN observation model.  
+
+#### Vectorized Observation
+
+In order to incorperate the probabilstic observation returned by the CNN recognition model we need to tweak the update step to accomadate this change. 
+
+Our update step consists of the following:  
 
 
-#### 
+$$
+\sum_{x_t}a_t(x_t)p(x_{t+1}|x_t)p(z_{t+1}|x_{t+1})
+$$
+Where $$a_t(x_t)$$ = recursive step; $$p(x_{t+1}|x_t)$$ = transition step;  $$p(z_{t+1}|x_{t+1})$$ = observation step
+
+For the observation step, with a single value $$z_{t+1}$$ this would normally just be an index into our observation model. 
+
+For example if the observation model gives us : $$ P(Z_t=z | X_t = x)  = \begin{bmatrix} 
+0.3 & 0.4 & 0.3 \\
+0.2 & 0.3 & 0.5 \\
+0.3 & 0.4 & 0.3 
+\end{bmatrix}
+\quad$$at index z,x
+
+
+
+So if $$z_t = 1, x_t=2$$  $$ P(z_t=1| x_t = 2) = 0.5 $$ 
+
+If instead $$z_t$$ is a multi-dimensional vector representing the observed probability of each emotional state. We could then represent  $$ P(z_t| x_t)  $$ as weighted combination of each possible state given by:
+$$
+\sum_z Z_{t,z}*P(Z_t=z | X_t = x)
+$$
+which is equivlent to taking the dot product of $$ Z_t$$ and  $$P(Z_t=z | X_t = x)$$
+
+
