@@ -39,3 +39,23 @@ I've found it very difficult testing different weights for 2 reasons.
 
 #### Next Steps
 My next step will be to try using a hidden Markov Model, as our previous state is actually a set of probabilities not just a single correct emotion. This will help when our previous state is not 'certain' on the best emotion and overinfluencing the following states. 
+
+
+## Hidden Markov Models
+In order to utilize more than just the previous frame using a Hidden Markov Model would likely be much more effective. We can model our our hidden state as seen below where Emotional State is the actual emotional state shown in the video, our Observation is the representing the value observed for that frame, and each t represents and individual frame. 
+
+!!! Insert Image
+
+
+#### Transition Model
+
+Our transition Model will represent the probability of transitioning from one state to another(including staying in the same state). This can be modeled as a Square Matrix where an index i,j represents the probability of moving from state i to state j. Because the initial goal is to smooth over sporadic jumps between emotional states I will start with an abritrarily high weight for each diagnoal representing remaining in the same state. 
+
+
+#### Observation Model
+
+
+The observation model describes that if we know the current state of an individual frame, what is the probability of the CNN model to predict each state. Again this can be represented as Square Matrix with i,j represneting that in a given state i, state j has an X probability of being observed. 
+
+
+#### 
