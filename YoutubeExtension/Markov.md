@@ -41,6 +41,7 @@ I've found it very difficult testing different weights for 2 reasons.
 My next step will be to try using a hidden Markov Model, as our previous state is actually a set of probabilities not just a single correct emotion. This will help when our previous state is not 'certain' on the best emotion and overinfluencing the following states. 
 
 
+<<<<<<< Updated upstream
 ## Hidden Markov Models
 In order to utilize more than just the previous frame using a Hidden Markov Model would likely be much more effective. We can model our our hidden state as seen below where Emotional State is the actual emotional state shown in the video, our Observation is the representing the value observed for that frame, and each t represents and individual frame. 
 
@@ -92,4 +93,10 @@ $$
 $$
 which is equivlent to taking the dot product of $$ Z_t$$ and  $$P(Z_t=z | X_t = x)$$
 
+=======
+## HMM
+
+
+#### Vectorizing Observations
+>>>>>>> Stashed changes
 

@@ -1,4 +1,4 @@
-Our update step consists of the following:  
+ Our update step consists of the following:  
 
 
 $$

@@ -88,14 +88,14 @@ async function getEmotions(results, canvas, input) {
         face_im = preprocess(face_im);
         
         z = EmotionModel.predict(face_im)
-        
+        let top = z.argMax(1).dataSync()[0]
         if (useMarkov == 1){
             z = applyMarkovWeights(z)
         }else if(useMarkov == 2){
-            z_arr = hmm_predict_states(z.argMax(1).dataSync()[0])
+            z_arr = hmm_predict_states(z.dataSync())
             z = tf.tensor([z_arr])
+            z = z.div(z.sum())
         }
-        let top = z.argMax(1).dataSync()[0]
         let indexes = tf.topk(z, 2)['indices']
         indexes = indexes.dataSync()
         
@@ -107,7 +107,7 @@ async function getEmotions(results, canvas, input) {
             //sendEmotionRequest(index)
             most_recent_emotions = z.clone()
             most_recent_emotion = index
-            context.fillText(emotion_labels[index], 10, 84);
+            context.fillText(emotion_labels[index] + emotion_labels[top], 10, 84);
         }
     }
 }

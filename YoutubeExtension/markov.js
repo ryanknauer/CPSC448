@@ -20,23 +20,23 @@ for(var i=0; i<transitions.length; i++) {
 
 function applyHiddenMarkovWeights(z){
     let res = tf.zeros([7], tf.int32)
-    console.log('starting res:')
-    res.print()
-    console.log('most recent:')
-    most_recent_emotions.print()
-    console.log('z:')
-    z.print()
+    // console.log('starting res:')
+    // res.print()
+    // console.log('most recent:')
+    // most_recent_emotions.print()
+    // console.log('z:')
+    // z.print()
     for(var i=0; i<transitions.length; i++) {
         let transitioned = z.mul(transitions[i])
         let multiplied = transitioned.mul(most_recent_emotions.dataSync()[i])
         res = res.add(multiplied)
 
-        console.log('transitioned')
-        transitioned.print()
-        console.log('multiplied')
-        multiplied.print()
-        console.log('res:')
-        res.print()
+        // console.log('transitioned')
+        // transitioned.print()
+        // console.log('multiplied')
+        // multiplied.print()
+        // console.log('res:')
+        // res.print()
     }
 
 
@@ -60,10 +60,10 @@ function getUrlParameter(sParam) {
 };
 
 function normalize(arr){
-    var ret 
+    var ret= []
     var ratio = arr.reduce((a,b) => a + b, 0)
     for ( var j = 0; j < arr.length; j++ ) {
-        ret.append( arr[j] / ratio)
+        ret.push( arr[j] / ratio)
     }
     return ret
 }
