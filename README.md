@@ -20,18 +20,15 @@ This course was broken down into two main parts in order to maintain a balance o
   * [Face Recognition](https://github.com/ryanknauer/CPSC448/tree/master/YoutubeExtension#3-face-recognition)
   * [Emotion Recognition](https://github.com/ryanknauer/CPSC448/tree/master/YoutubeExtension#4-emotion-recognition
 * [Improving Emotion Recognition Using Markov Models](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md)
+  * [First Attempt Markov Model](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#first-attempt)
+   * [Results](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#results)
   * [Hidden Markov Models](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md)
-
+  * [Vectorized Observations](https://github.com/ryanknauer/CPSC448/blob/master/HMM.ipynb)
 ### Paper Readings
 
  * [Reading #1 - 'A Brief Review of Facial Emotion Recognition Based on Visual Information'](https://github.com/ryanknauer/CPSC448/blob/master/Readings1.md)
 
  * [Reading #2 - 'ImageNet Classification with Deep Convolutional Neural Networks'](https://github.com/ryanknauer/CPSC448/blob/master/Reading2.md)
 
-## Minimum Deliverable Set
-* 3 readings summaries
-* System for grabbing youtube video data (either in real time or by downloading and postprocessing)
-* Facial recognition on a single paused frame using open source frameworks
-* Overlay outlines of faces on a single paused frame
-* Emotion recognition on a single pause frame using open source frameworks
-* A written outline/documentation describing the steps I would take to implement my own models for facial recognition and emotion recognition.
+ * [Reading #3 - 'TBD'](https://github.com/ryanknauer/CPSC448/blob/master/Reading2.md)
+
