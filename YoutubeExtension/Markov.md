@@ -63,6 +63,6 @@ Most common HMM assume a single valued observation represting the exact state ob
 
 #### Vectorized Observation
 
-Latex Doesn't Display In Markdown so this is in a seperate file [here](https://github.com/ryanknauer/CPSC448/blob/master/HMM.ipynb)
+LaTeX Doesn't Display In Markdown so this is in a seperate file [here](https://github.com/ryanknauer/CPSC448/blob/master/HMM.ipynb)
 
 
