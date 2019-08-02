@@ -22,29 +22,16 @@ This course was broken down into two main parts in order to maintain a balance o
 * [Improving Emotion Recognition Using Markov Models](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md)
   * [Hidden Markov Models](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md)
 
-#### Paper Readings
+### Paper Readings
 
  * [Reading #1 - 'A Brief Review of Facial Emotion Recognition Based on Visual Information'](https://github.com/ryanknauer/CPSC448/blob/master/Readings1.md)
 
  * [Reading #2 - 'ImageNet Classification with Deep Convolutional Neural Networks'](https://github.com/ryanknauer/CPSC448/blob/master/Reading2.md)
 
 ## Minimum Deliverable Set
-* 6 readings summaries
+* 3 readings summaries
 * System for grabbing youtube video data (either in real time or by downloading and postprocessing)
 * Facial recognition on a single paused frame using open source frameworks
 * Overlay outlines of faces on a single paused frame
 * Emotion recognition on a single pause frame using open source frameworks
-* A written outline/documentation describing the steps I would take to implement my own models for facial recognition and emotion recognition. Including but not limited to:
-  * Tools I would use and why
-  * The model(s) I would implement and the pros/cons of each
-  * What hyperparameters I would need to set
-  * Ideas on best way to set these hyperparameters
-  * Ideal data I would want to gather for training
-  * Steps I would take for training + validating
-
-
-
-
-!!! Explain why this is seperate form CDM Project
-
-!!! Markov Chains for smoothing emotions
+* A written outline/documentation describing the steps I would take to implement my own models for facial recognition and emotion recognition.
