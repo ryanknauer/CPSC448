@@ -28,6 +28,10 @@ This course was broken down into two main parts in order to maintain a balance o
     * [Observation Model](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#observation-model)
     * [Single Value Observation](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#single-valued-observation)
     * [Vectorized Observations](https://github.com/ryanknauer/CPSC448/blob/master/HMM.ipynb)
+  * [Resources](https://www.youtube.com/watch?v=9yl4XGp5OEg)
+    * [CPSC 322 + 422
+](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#cpsc-322--422)
+    * [Resources](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#bert-huang---virginia-tech-hmm-lecture)
 ### Paper Readings
 
  * [Reading #1 - 'A Brief Review of Facial Emotion Recognition Based on Visual Information'](https://github.com/ryanknauer/CPSC448/blob/master/Readings1.md)
