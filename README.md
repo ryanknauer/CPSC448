@@ -10,7 +10,7 @@ I am currently taking CPSC 491 working on a project with CDM to build an interac
 
 ## Table of Contents/Breakdown
 
-This course was broken down into two main parts in order to maintain a balance of both implementation and reading/learning. The first part stems from the 491 course, implementing and improving the chrome extension outlined above. The second was to dive deeper into reading papers to get a better idea for how the open source ML tools used are actually working. 
+This course was broken down into two main parts in order to maintain a balance of both implementation and reading/learning. The first part stems from the 491 course, implementing and improving the chrome extension outlined above. Here I was able to apply and build upon skills covered in CPSC322 + CPSC 422 to integrate spatial locality into the emotion recognition system using Markov Models. The second was to dive deeper into reading papers to get a better idea for how the open source ML tools used are actually working. This allowed me to strengthen my knowledge of Nueral Networks and CNNs covered briefly in CPSC340 and 425.
 
 ### Youtube Chrome Extension
 * [Demo](https://github.com/ryanknauer/CPSC448/tree/master/YoutubeExtension#demo)
