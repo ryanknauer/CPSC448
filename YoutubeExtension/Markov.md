@@ -66,3 +66,14 @@ Most common HMM assume a single valued observation represting the exact state ob
 LaTeX Doesn't Display In Markdown so this is in a seperate file [here](https://github.com/ryanknauer/CPSC448/blob/master/HMM.ipynb)
 
 
+### Resources
+
+#### CPSC 322 + 422
+CPSC 422 helped lay the groundwork for understanding these models and algorithms, especially when dealing with filtering HMMs. While it had been a long time since taking these courses, and I needed to refresh my understanding using tools listed below - the deeper underlying concepts came back to me much quicker this time around. When taking 422 one of the biggest challenges I faced was mapping the model's usecases to real world problems. This project did a fantastic job showing me exactly that.
+
+#### Bert Huang - Virginia Tech HMM lecture
+https://www.youtube.com/watch?v=9yl4XGp5OEg
+While the more conceptual aspects of HMM's came back to me fairly quickly from 422, I definately struggled more with the math side of implementing filtering. This lecture had the most concise explanation and visuals describing the math needed to implement filtering, which helped lead me to the end result. 
+
+
+
