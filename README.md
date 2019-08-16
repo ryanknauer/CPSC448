@@ -52,7 +52,7 @@ This course was broken down into two main parts in order to maintain a balance o
 
  * [Reading #3 - Recurrent Nueral Networks, Long Short Term Memory](https://github.com/ryanknauer/CPSC448/blob/master/Readings3.md)
 
-### [Future Learning](https://github.com/ryanknauer/CPSC448/blob/master/NextSteps.md)
+### Future Learning
 * [Further Implementations](https://github.com/ryanknauer/CPSC448/blob/master/NextSteps.md#implementation-of-emotion-recognition)
 * [Loose Ends](https://github.com/ryanknauer/CPSC448/blob/master/NextSteps.md#loose-ends)
 * [Further Explorations](https://github.com/ryanknauer/CPSC448/blob/master/NextSteps.md#explorations)
