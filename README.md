@@ -43,7 +43,7 @@ This course was broken down into two main parts in order to maintain a balance o
 ](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#cpsc-322--422)
     * [Bert Huang - Virginia Tech HMM lecture
 ](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#bert-huang---virginia-tech-hmm-lecture)
-* [Next Steps](https://github.com/ryanknauer/CPSC448/blob/master/NextSteps.md)
+
 ### Paper Readings
 
  * [Reading #1 - A Brief Review of Facial Emotion Recognition Based on Visual Information](https://github.com/ryanknauer/CPSC448/blob/master/Readings1.md)
@@ -52,3 +52,4 @@ This course was broken down into two main parts in order to maintain a balance o
 
  * [Reading #3 - Recurrent Nueral Networks, Long Short Term Memory](https://github.com/ryanknauer/CPSC448/blob/master/Readings3.md)
 
+### [Next Steps](https://github.com/ryanknauer/CPSC448/blob/master/NextSteps.md)
