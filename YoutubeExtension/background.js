@@ -9,7 +9,7 @@ var config = {
 firebase.initializeApp(config);
 
 
-var GET_URL = 'http://10.159.23.78:8877/api/action/'
+var GET_URL = 'http://10.159.23.197:8877/api/action/'
 
 
 
