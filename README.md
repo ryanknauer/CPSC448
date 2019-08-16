@@ -50,5 +50,5 @@ This course was broken down into two main parts in order to maintain a balance o
 
  * [Reading #2 - Nueral Networks, Convultional Nueral Networks, ImageNet](https://github.com/ryanknauer/CPSC448/blob/master/Reading2.md)
 
- * [Reading #3 - Recurrent Nueral Networks, Long Short Term Memory](https://github.com/ryanknauer/CPSC448/blob/master/Reading3.md)
+ * [Reading #3 - Recurrent Nueral Networks, Long Short Term Memory](https://github.com/ryanknauer/CPSC448/blob/master/Readings3.md)
 
