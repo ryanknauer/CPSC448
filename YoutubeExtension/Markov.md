@@ -63,38 +63,18 @@ Most common HMM assume a single valued observation represting the exact state ob
 
 #### Vectorized Observation
 
-In order to incorperate the probabilstic observation returned by the CNN recognition model we need to tweak the update step to accomadate this change. 
-
-Our update step consists of the following:  
+LaTeX Doesn't Display In Markdown so this is in a seperate file [here](https://github.com/ryanknauer/CPSC448/blob/master/HMM.ipynb)
 
 
-$$
-\sum_{x_t}a_t(x_t)p(x_{t+1}|x_t)p(z_{t+1}|x_{t+1})
-$$
-Where $$a_t(x_t)$$ = recursive step; $$p(x_{t+1}|x_t)$$ = transition step;  $$p(z_{t+1}|x_{t+1})$$ = observation step
+### Resources
 
-For the observation step, with a single value $$z_{t+1}$$ this would normally just be an index into our observation model. 
+#### CPSC 322 + 422
+CPSC 422 helped lay the groundwork for understanding these models and algorithms, especially when dealing with filtering HMMs. While it had been a long time since taking these courses, and I needed to refresh my understanding using tools listed below - the deeper underlying concepts came back to me much quicker this time around. When taking 422 one of the biggest challenges I faced was mapping the model's usecases to real world problems. This project did a fantastic job showing me exactly that.
 
-For example if the observation model gives us : $$ P(Z_t=z | X_t = x)  = \begin{bmatrix} 
-0.3 & 0.4 & 0.3 \\
-0.2 & 0.3 & 0.5 \\
-0.3 & 0.4 & 0.3 
-\end{bmatrix}
-\quad$$at index z,x
+
+#### Bert Huang - Virginia Tech HMM lecture
+https://www.youtube.com/watch?v=9yl4XGp5OEg
+While the more conceptual aspects of HMM's came back to me fairly quickly from 422, I definately struggled more with the math side of implementing filtering. This lecture had the most concise explanation and visuals describing the math needed to implement filtering, which helped lead me to the end result. 
 
 
 
-So if $$z_t = 1, x_t=2$$  $$ P(z_t=1| x_t = 2) = 0.5 $$ 
-
-If instead $$z_t$$ is a multi-dimensional vector representing the observed probability of each emotional state. We could then represent  $$ P(z_t| x_t)  $$ as weighted combination of each possible state given by:
-$$
-\sum_z Z_{t,z}*P(Z_t=z | X_t = x)
-$$
-which is equivlent to taking the dot product of $$ Z_t$$ and  $$P(Z_t=z | X_t = x)$$
-
-## HMM
-
-
-#### Vectorizing Observations
-
-    
