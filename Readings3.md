@@ -2,13 +2,18 @@
 
 ## Materials
 [Brandon Rohrer - "Recurrent Neural Networks (RNN) and Long Short-Term Memory (LSTM)"](https://www.youtube.com/watch?v=WCUNPb-5EYI&t=713s)
-This video gives a high level overview of both RNNs and LSTMs. I felt this did a great job of covering the intuition behind why RNN and LSTMs are useful which I find to be a large learning barrier with many of this more dense conceptual models. 
+This video gives a high level overview of both RNNs and LSTMs. I felt this did a great job of covering the intuition behind why RNN and LSTMs are useful which I find to be a large learning barrier with many of this more dense conceptual models.
+
+[Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+This write up on LSTMs contains the best examples and visuals I have found and really helped me solidfy the understanding of each gate. Additionally, it did a great job outline the transition from RNNs to LSTMs. 
 
 ## Recurrent Nueral Networks
 Interestingly enough, the application phase of this project using [Markov Models](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md) really helped my transition into understanding the high level behind RNN and LSTM as these solve the same problem we were trying to solve using Markov Models. A RNN is a Nueral Network that feeds in the prediction of the previous state as inputs into the Nueral Network. This is similar to our use of HMM using a transition probability from a previous state to the next one. The weakness of this, is that the context does not maintain predictions more than one step back. This becomes a problem in something like language translation, where words can be heavily reliant on one another even if they are spaced multiple words apart. 
 
 
 ## Long Short Term Memory
+As discussed above, the weakness of RNN's is that they only preserve the prediction of the previous state. A LSTM provides a NN(actually a collection of NNs) architecture that allows for memory of previous predictions to be stored, decides how long to store the predictions, and which predictions to ignore at certain states. These different tasks are implemented through gates, each powered by it's on Nueral Network and regulate the flow of information throught the model. This control of information is vital as the complexity of the network would grow exponentially for every prediction that is stored into memory if the model was not concurrently filtering out the most 'useful' pieces of information. The most common layout of theses gates consists of:
+*
 
 
 ## Application to Miigo
