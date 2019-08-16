@@ -52,4 +52,4 @@ This course was broken down into two main parts in order to maintain a balance o
 
  * [Reading #3 - Recurrent Nueral Networks, Long Short Term Memory](https://github.com/ryanknauer/CPSC448/blob/master/Readings3.md)
 
-### [Next Steps](https://github.com/ryanknauer/CPSC448/blob/master/NextSteps.md)
+### [Future Learning](https://github.com/ryanknauer/CPSC448/blob/master/NextSteps.md)
