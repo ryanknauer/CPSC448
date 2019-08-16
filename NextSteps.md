@@ -1,3 +1,15 @@
-# Next Steps
+# Future Learning
 
-...
+## Implementation of Emotion Recognition
+If time permitted, my next step for my own personal learning goals would be to attempt training my own emotion recogntion model. From my research, I discovered the common practice of [fine tuning](https://www.youtube.com/watch?v=5T-iXNNiwIs) an existing model. This consists of taking the first X hidden layers of an already implemented and successful NN/CNN throwing away the fully connected prediction layers, and retraining the a new connected layer model towards your new problem statement. In this case I would consider using ImageNet discussed in reading #2, and adapting the fully connected layers for emotion classification. 
+
+## Loose Ends
+One of the main loose ends remaing for the Markov Model portion of this project is deciding on and quantifying effective observation and transition models for the HMMs. Currently I am using diagonalized matrices and setting the diagnoal through trail and error. Ideally, I would be able to do a run through on test data to provide a potential estimate of these actual probabilities. Another great idea Steve mentioned was to effectively shift the transition model based on the time elapsed between frames. This would help lower the weight of transitions in cases where we drop a large number of frames between observations. 
+
+Researching faster emotion recognition models. There was a very limited number of Emotion Recognition models available that could be easily used in Javascript. This was by far the slowest computation, thus finding a faster model would help tremendously with the frame dropping issues discussed above and in the [RNN/LSTM reading seciton](https://github.com/ryanknauer/CPSC448/blob/master/Readings3.md#application-to-miigo)
+
+Looking for a faster way to load the models into content scripts. Currently, every time you want to run the emotion recognition chrome extention on a youtube video the applicaition must load the FER models from the background chrome extension to the foreground content scripts. This is extremely slow and really hurts the experience both as a user and developer. Here I could possibly run the Emotion Recogntion in the background chrome extension scripts, removing the need for transfering the models altogether. 
+
+## Explorations
+
+Lastly, I would like to continue exploring the potential usefulness of RNNs and LSTMs in the context of this application. I outlined one potential issue due to dropped frames [here](https://github.com/ryanknauer/CPSC448/blob/master/Readings3.md#application-to-miigo), however there are still many potential solutions for this. First, as outlined RNNs could still handle dropped frames, however the usefulless of this is needs further research. Second, dropped frames could be eliminated by either buffering the videos or preprocessing the entire video on a backend server before watching. Without the issue of dropped frames, RNN (and potentially LSTM) models may make significant improvements on the overall emotion recognition system.  
