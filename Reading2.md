@@ -8,7 +8,7 @@ In my first reading I hit a wall when the paper got deeper into the use of Nuera
 
 ### Materials + Overview
 
-First, I went through [3Blue1Brown's mini-course on Nueral Networks](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi). These videos give an extrodinairy overview of the intuition behind how and why Nueral Networks actually work. 
+First, I went through [3Blue1Brown's mini-course on Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi). These videos give an extraordinary overview of the intuition behind how and why Nueral Networks actually work. 
 
 Next, as the core of emotion recognition would be built on CNNs, I went through [Deep Lizard's Series on CNNs](https://www.youtube.com/watch?v=YRhxdVk_sIs&list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU&index=21). 
 

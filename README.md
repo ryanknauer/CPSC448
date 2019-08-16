@@ -9,8 +9,8 @@ I am currently taking CPSC 491 working on a project with CDM to build an interac
 
 ## Learning Goals
 
-* Understand the high + mid level intuition behind the emotion recogntion models that would be used in this application
-* Gain hands on application experience using open source models for facial recognition and emotion recogniton 
+* Understand the high + mid level intuition behind the emotion recognition models that would be used in this application
+* Gain hands on application experience using open source models for facial recognition and emotion recognition 
 * Learn to fine tune and improve available tools to solve a specific, real world problem
 * Gain experience using tensorflow
 * Understand workings behind more advanced models used in industry such as Long Short Term Memory 
@@ -20,7 +20,7 @@ I am currently taking CPSC 491 working on a project with CDM to build an interac
 
 ## Table of Contents/Breakdown
 
-This course was broken down into two main parts in order to maintain a balance of both implementation and reading/learning. The first part stems from the 491 course, implementing and improving the chrome extension outlined above. Here I was able to apply and build upon skills covered in CPSC322 + CPSC 422 to integrate spatial locality into the emotion recognition system using Markov Models. The second was to dive deeper into reading papers to get a better idea for how the open source ML tools used are actually working. This allowed me to strengthen my knowledge of Nueral Networks and CNNs covered briefly in CPSC340 and 425. Because the readings and papers have a lot of overlap in terms of material and learning goals I have provided references to these overlaps throughout both sections. For high level layout purposes I have chosen to keep them seperated. 
+This course was broken down into two main parts in order to maintain a balance of both implementation and reading/learning. The first part stems from the 491 course, implementing and improving the chrome extension outlined above. Here I was able to apply and build upon skills covered in CPSC322 + CPSC 422 to integrate spatial locality into the emotion recognition system using Markov Models. The second was to dive deeper into reading papers to get a better idea for how the open source ML tools used are actually working. This allowed me to strengthen my knowledge of Neural Networks and CNNs covered briefly in CPSC340 and 425. Because the readings and papers have a lot of overlap in terms of material and learning goals I have provided references to these overlaps throughout both sections. For high level layout purposes I have chosen to keep them seperated. 
 
 ### Youtube Chrome Extension
 * [Demo](https://github.com/ryanknauer/CPSC448/tree/master/YoutubeExtension#demo)
@@ -49,9 +49,9 @@ This course was broken down into two main parts in order to maintain a balance o
 
  * [Reading #1 - A Brief Review of Facial Emotion Recognition Based on Visual Information](https://github.com/ryanknauer/CPSC448/blob/master/Readings1.md)
 
- * [Reading #2 - Nueral Networks, Convultional Nueral Networks, ImageNet](https://github.com/ryanknauer/CPSC448/blob/master/Reading2.md)
+ * [Reading #2 - Neural Networks, Convolutional Neural Networks, ImageNet](https://github.com/ryanknauer/CPSC448/blob/master/Reading2.md)
 
- * [Reading #3 - Recurrent Nueral Networks, Long Short Term Memory](https://github.com/ryanknauer/CPSC448/blob/master/Readings3.md)
+ * [Reading #3 - Recurrent Neural Networks, Long Short Term Memory](https://github.com/ryanknauer/CPSC448/blob/master/Readings3.md)
 
 ### Future Learning
 * [Further Implementations](https://github.com/ryanknauer/CPSC448/blob/master/NextSteps.md#implementation-of-emotion-recognition)

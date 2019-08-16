@@ -1,11 +1,11 @@
 # Markov Chains for Video Smoothing
 
-One large issue identified with the first iteration of the recognition application was the choppiness of false-positive in a video. This is because we were checking each still image seperately with no context for the previous frames. This would result in constant flashings of incorrect emotions which would be fairly detrimental to the experience for an end user. As a quicker fix without diving into more complex recogition models such as LSTM's, I first will try using a Markov Chain in conjunction with the individual image recognitions. 
+One large issue identified with the first iteration of the recognition application was the choppiness of false-positive in a video. This is because we were checking each still image seperately with no context for the previous frames. This would result in constant flashings of incorrect emotions which would be fairly detrimental to the experience for an end user. As a quick fix without diving into more complex recognition models such as LSTM's, I first will try using a Markov Chain in conjunction with the individual image recognitions. 
 
 
 ## First Attempt
 
-For the first attempt, I want to try using a binary transition model, which only indicates if the emotion stays the same or not. While their are likely different probabilities of moving from say happy -> nuetral vs happy -> sad, these should be very small relative to staying in the same state(e.g. happy -> happy) from frame to frame. To do this I created a transition array with each index correlating to an emotion, and each value indicating a weight. I then set the value of the previous emotion state to a pre-selected weight. Finally, performing an element-wise array multiplication with the predicted emotion values of the current frame(held in a tensor 'z'):  
+For the first attempt, I want to try using a binary transition model, which only indicates if the emotion stays the same or not. While their are likely different probabilities of moving from say happy -> nuetral vs happy -> sad, these should be very small relative to staying in the same state(e.g. happy -> happy) from frame to frame. To do this I created a transition array with each index correlating to an emotion, and each value indicating a weight. I then set the value of the previous emotion state to a preselected weight. Finally, performing an element-wise array multiplication with the predicted emotion values of the current frame(held in a tensor 'z'):  
 
 ```
 let transition = [1,1,1,1,1,1,1]
@@ -13,7 +13,7 @@ transition[most_recent_emotion] = markovWeight
 return z.mul(transition)
 ```
 
-In order to easily compare and test different weighting values, I also implemented a URL-paramater grabber to allow for these values to be set without reloading the extension. These can be set via url parameters such as:
+In order to easily compare and test different weighting values, I also implemented a URL-parameter grabber to allow for these values to be set without reloading the extension. These can be set via url parameters such as:
 
 ```https://www.youtube.com/watch?v=qTLrjhReNtg&markovWeight=9&useMarkov=1```
 
@@ -34,7 +34,7 @@ As you can see above, this did a successful job smoothing over quick jumps in em
 
 I've found it very difficult testing different weights for 2 reasons. 
 
-1. The nuetral expression is very overpowering. This would likely need to be treated with a different set of rules compared to other emotions.
+1. The neutral expression is very overpowering. This would likely need to be treated with a different set of rules compared to other emotions.
 2. Due to performance issues not every frame is being captured. This will provide vastly different results depending on the computer and video. 
 
 #### Next Steps
@@ -57,7 +57,7 @@ The observation model describes that if we know the current state of an individu
 
 #### Single Valued Observation
 
-Most common HMM assume a single valued observation represting the exact state observed. So, even though our CNN observation provides a probablistic observation for each state, we will start by providing only the highest probable state as the single observed state. Of course this looses any differentiation between more or less confident guesses by the CNN observation model.  
+Most common HMM assume a single valued observation representing the exact state observed. So, even though our CNN observation provides a probabilistic observation for each state, we will start by providing only the highest probable state as the single observed state. Of course this looses any differentiation between more or less confident guesses by the CNN observation model.  
 
 #### Vectorized Observation
 
@@ -81,7 +81,7 @@ CPSC 422 helped lay the groundwork for understanding these models and algorithms
 
 #### Bert Huang - Virginia Tech HMM lecture
 https://www.youtube.com/watch?v=9yl4XGp5OEg
-While the more conceptual aspects of HMM's came back to me fairly quickly from 422, I definately struggled more with the math side of implementing filtering. This lecture had the most concise explanation and visuals describing the math needed to implement filtering, which helped lead me to the end result. 
+While the more conceptual aspects of HMM's came back to me fairly quickly from 422, I definitely struggled more with the math side of implementing filtering. This lecture had the most concise explanation and visuals describing the math needed to implement filtering, which helped lead me to the end result. 
 
 
 
