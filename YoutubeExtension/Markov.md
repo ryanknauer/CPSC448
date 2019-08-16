@@ -44,8 +44,6 @@ My next step will be to try using a hidden Markov Model, as our previous state i
 ## Hidden Markov Models
 In order to utilize more than just the previous frame using a Hidden Markov Model would likely be much more effective. We can model our our hidden state as seen below where Emotional State is the actual emotional state shown in the video, our Observation is the representing the value observed for that frame, and each t represents and individual frame. 
 
-!!! Insert Image
-
 
 #### Transition Model
 
@@ -64,6 +62,15 @@ Most common HMM assume a single valued observation represting the exact state ob
 #### Vectorized Observation
 
 LaTeX Doesn't Display In Markdown so this is in a seperate file [here](https://github.com/ryanknauer/CPSC448/blob/master/HMM.ipynb)
+
+
+#### Results
+
+Below I have added a side by side comparison between our original CNN model(Right) and the updated HMM model using vectorized observations(right):
+
+![](https://github.com/ryanknauer/CPSC448/blob/master/Images/grant_side_by_side.gif)
+
+As you can see, the original model flashes between many different emotional states very quickly due to weaknesses in the observation model and a lack of context from previous frames. By adding in a HMM that preserves information from previous frames we get a much smoother transition between emotional states. 
 
 
 ### Resources
