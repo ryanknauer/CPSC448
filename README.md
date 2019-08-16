@@ -33,7 +33,7 @@ This course was broken down into two main parts in order to maintain a balance o
   * [First Attempt Markov Model](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#first-attempt)
     * [Results](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#results)
     * [Next Steps](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#next-steps)
-  * [Hidden Markov Models](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md)
+  * [Hidden Markov Models](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#hidden-markov-models)
     * [Transition Model](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#transition-model)
     * [Observation Model](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#observation-model)
     * [Single Value Observation](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#single-valued-observation)
