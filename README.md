@@ -14,6 +14,7 @@ I am currently taking CPSC 491 working on a project with CDM to build an interac
 * Learn to fine tune and improve available tools to solve a specific, real world problem
 * Gain experience using tensorflow
 * Understand workings behind more advanced models used in industry such as Long Short Term Memory 
+* Understand intuition behind implementation of models used for emotion and facial recognition 
 
 
 
