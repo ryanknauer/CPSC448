@@ -37,7 +37,7 @@ This course was broken down into two main parts in order to maintain a balance o
 
  * [Reading #1 - 'A Brief Review of Facial Emotion Recognition Based on Visual Information'](https://github.com/ryanknauer/CPSC448/blob/master/Readings1.md)
 
- * [Reading #2 - 'ImageNet Classification with Deep Convolutional Neural Networks'](https://github.com/ryanknauer/CPSC448/blob/master/Reading2.md)
+ * [Reading #2 - 'Nueral Networks, Convultional Nueral Networks, ImageNet'](https://github.com/ryanknauer/CPSC448/blob/master/Reading2.md)
 
- * [Reading #3 - 'TBD'](https://github.com/ryanknauer/CPSC448/blob/master/Reading2.md)
+ * [Reading #3 - 'Reccurent Nueral Networks, Long Short Term Memory'](https://github.com/ryanknauer/CPSC448/blob/master/Reading3.md)
 
