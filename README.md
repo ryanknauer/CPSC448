@@ -35,9 +35,9 @@ This course was broken down into two main parts in order to maintain a balance o
 ](https://github.com/ryanknauer/CPSC448/blob/master/YoutubeExtension/Markov.md#bert-huang---virginia-tech-hmm-lecture)
 ### Paper Readings
 
- * [Reading #1 - 'A Brief Review of Facial Emotion Recognition Based on Visual Information'](https://github.com/ryanknauer/CPSC448/blob/master/Readings1.md)
+ * [Reading #1 - A Brief Review of Facial Emotion Recognition Based on Visual Information](https://github.com/ryanknauer/CPSC448/blob/master/Readings1.md)
 
- * [Reading #2 - 'Nueral Networks, Convultional Nueral Networks, ImageNet'](https://github.com/ryanknauer/CPSC448/blob/master/Reading2.md)
+ * [Reading #2 - Nueral Networks, Convultional Nueral Networks, ImageNet](https://github.com/ryanknauer/CPSC448/blob/master/Reading2.md)
 
- * [Reading #3 - 'Reccurent Nueral Networks, Long Short Term Memory'](https://github.com/ryanknauer/CPSC448/blob/master/Reading3.md)
+ * [Reading #3 - Recurrent Nueral Networks, Long Short Term Memory](https://github.com/ryanknauer/CPSC448/blob/master/Reading3.md)
 
