@@ -24,5 +24,8 @@ As discussed above, the weakness of RNN's is that they only preserve the predict
 
 
 ## Application to Miigo
+
+*Note: My intuition on LSTM effectiveness below is likely incorrect after revisiting [Reading 1](). LSTMs actually have been used quite successfully in this context when combined with CNNs for deeper feature extraction.*
+
 For our application, RNNs might actually be a better fit than LSTM models as the biggest challenge we face is smoothing over jumps in emotions. Generally, emotions will not have very complex patterns over time like that of speach or writing. After further researching these models, I also believe that our implementation (or at least direction of implementation) of Markov Models was a very viable solution for the problem we faced. One of the biggest reasons for this is the unpredictablitiy of computing time leading to dropped frames. Since we are running the predictions in real time, we often drop dozens of frames based on computing power. Since an RNN would be trained based off a linear sequence of constant time intervals, these dropped frames would add an additional layer of complexity. With that said, it seems that RNN would still be able to handle this by recursively predicting each of the dropped frames before predicting the current one. Unfortunately this would then likely add an even larger time burder. 
 
