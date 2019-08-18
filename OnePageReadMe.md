@@ -171,6 +171,8 @@ Most common HMM assume a single valued observation representing the exact state 
 
 LaTeX Doesn't Display In Markdown so this is in a seperate file [here](https://github.com/ryanknauer/CPSC448/blob/master/HMM.ipynb)
 
+![](https://github.com/ryanknauer/CPSC448/blob/master/Images/vectorized.png)
+
 
 #### Results
 
