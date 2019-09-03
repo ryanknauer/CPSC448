@@ -4,17 +4,17 @@
 
 ### Overview
 
-This reading was aimed to strengthen my technical knowledge gaps that presented themselves in my first reading by strengthing my understanding of Neural Networks and CNN's 
+This reading was aimed to strengthen my technical knowledge gaps that presented themselves in my first reading by strengthing my understanding of Neural Networks and CNN's.
 
 
 ### Materials + Overview
 
-First, I went through [3Blue1Brown's mini-course on Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi). These videos give an extraordinary overview of the intuition behind how and why Neural Networks actually work. 
+First, [3Blue1Brown's mini-course on Neural Networks](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) gave an extraordinary overview of the intuition behind how and why Neural Networks actually work. 
 
-Next, as the core of emotion recognition would be built on CNNs, I went through [Deep Lizard's Series on CNNs](https://www.youtube.com/watch?v=YRhxdVk_sIs&list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU&index=21). 
+Next, as the core of emotion recognition would be built on CNNs, I went through [Deep Lizard's Series on CNNs](https://www.youtube.com/watch?v=YRhxdVk_sIs&list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU&index=21) which provide more examples on implementation and relate closely to real world applications. 
 
-Finally, looking into Emotion Recognition tutorials lead me to read the paper: [ImageNet Classification with Deep Convolutional
-Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf), which outlines an extremely successful image recogntion CNN model that is often used as a starting point for FER models. Going into this paper, one of my biggest points of confusion was how the hyperparameters Nueral Networks are decided upon. Nueral Nets come with a large amount of variability in this area, and while the high level workings are explained very well, there seems to be little intuition on how to actually choose these parameters. While part of the answer seems to be that there really is no 'right way' or concrete intuition behind setting up a CNN/NN, this paper did provide alot more understanding behind the actually process.
+Finally, the paper [ImageNet Classification with Deep Convolutional
+Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) outlines an extremely successful image recogntion CNN model that is often used as a starting point for FER models. Going into this paper, one of my biggest points of confusion was how the hyperparameters Nueral Networks are decided upon. Nueral Nets come with a large amount of variability in this area, and while the high level workings are explained very well, there seems to be little intuition on how to actually choose these parameters. While part of the answer seems to be that there really is no 'right way' or concrete intuition behind setting up a CNN/NN, this paper did provide alot more understanding behind the actually process.
 
 
 ### Questions/Key Findings
