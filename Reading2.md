@@ -4,7 +4,8 @@
 
 ### Overview
 
-In my first reading I hit a wall when the paper got deeper into the use of Nueral Networks and CNNs, so for my second set of readings I wanted to further my understanding of CNN's. 
+This reading was aimed to strengthen my technical knowledge gaps that presented themselves in my first reading by strengthing my understanding of Neural Networks and CNN's 
+
 
 ### Materials + Overview
 
