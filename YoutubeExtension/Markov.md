@@ -2,6 +2,12 @@
 
 One large issue identified with the first iteration of the recognition application was the choppiness of false-positive in a video. This is because we were checking each still image seperately with no context for the previous frames. This would result in constant flashings of incorrect emotions which would be fairly detrimental to the experience for an end user. To solve this, we want to incorperate information from previous frames into our emotion prediction model. For example, if we see 10 frames heavily predicted to be a sad face followed by a single frame predicted to be happy, we most likely don't want our model to be predicting happy until we have seen more consistent happy predictions in a row. One idea mentioned in my [first reading](https://github.com/ryanknauer/CPSC448/blob/master/Readings1.md) is the use of RNNs and LSTMs, which I explore in more depth during my [third reading](https://github.com/ryanknauer/CPSC448/blob/master/Readings3.md). These models can be extremely complexand would require a large overhead both in knowledge and development. A great idea Steve came up with was to utilize markov models and incorperate them with our CNN acting as an observation sensor as I will outline in this document. Markov Models have a much lower overhead while still encompassing the same ideas of RNN + LSTMs on a much smaller scale.  
 
+## Moarkov Model Diagram
+
+Below is an example diagram of a simple markov model consisting of 3 emotional states. Each arrow would represent a corresponding weight providing the probability of transitioning from that state to the next one. 
+
+![](https://github.com/ryanknauer/CPSC448/blob/master/Images/Markov_Model_1.png?raw=true)
+
 
 ## First Attempt
 
@@ -44,6 +50,7 @@ My next step will be to try using a hidden Markov Model, as our previous state i
 ## Hidden Markov Models
 In order to utilize more than just the previous frame using a Hidden Markov Model would likely be much more effective. We can model our our hidden state as seen below where Emotional State is the actual emotional state shown in the video, our Observation is the representing the value observed for that frame, and each t represents and individual frame. 
 
+![](https://github.com/ryanknauer/CPSC448/blob/master/Images/HMM_Diagram_1.png?raw=true)
 
 #### Transition Model
 
