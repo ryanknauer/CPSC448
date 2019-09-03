@@ -38,7 +38,7 @@ With the face detection giving a bounding box for the face itself, I was able to
 
 ![](https://github.com/ryanknauer/CPSC448/blob/master/Images/Screen%20Shot%202019-05-27%20at%205.26.56%20PM.png)
 
-One of the limitations of the Chrome Extension system is that all application files are stored in a seperate context than that of the actual web page. This is a problem because every time a page our extension is run on a youtube video, it needs to pull the FER model from the application context into the actual webpage. A potential solution for this would be to send the image to the app context to apply the emotion recognition weights, then send the returned prediction back to the webpage. 
+One of the limitations of the Chrome Extension system is that all application files are stored in a seperate context from that of the actual web page. This is a problem because every time a page our extension is run on a youtube video, it needs to pull the FER model from the application context into the actual webpage. A potential solution for this would be to send the image to the app context to apply the emotion recognition weights, then send the returned prediction back to the webpage. 
 
 ### 5. Tuning
 
